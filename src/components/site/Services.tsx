@@ -91,9 +91,9 @@ export function Services() {
                   <h3 className="mt-6 font-display text-2xl font-semibold leading-snug" style={{ color: "#d35c3c" }}>
                     {s.title}
                   </h3>
-                 <p className="mt-3 text-sm leading-relaxed text-foreground/90 lg:text-base">
-                    {s.desc}
-                  </p>
+                <p className="mt-3 text-base font-bold leading-relaxed text-[#262262] lg:text-base">
+  {s.desc}
+</p>
 
                   <div className="mt-6 flex items-center gap-2 text-sm font-medium text-spark opacity-0 transition-opacity group-hover:opacity-100">
                     Learn more <span>→</span>

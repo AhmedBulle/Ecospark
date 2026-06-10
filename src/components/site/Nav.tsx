@@ -46,8 +46,7 @@ export function Nav() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-foreground/75 transition-colors hover:text-spark"
-              >
+className="text-base font-semibold text-[#262262] transition-colors hover:text-spark"              >
                 {l.label}
               </a>
             ))}

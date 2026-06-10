@@ -73,10 +73,10 @@ export function Projects() {
                 <div className="text-xs uppercase tracking-widest text-muted-foreground">
                   {p.meta}
                 </div>
-                <h3 className="mt-3 font-display text-2xl font-semibold leading-snug" style={{ color: "#d35c3c" }}>
+                 <h3 className="mt-3 font-display text-2xl font-semibold leading-snug" style={{ color: "#d35c3c" }}>
                   {p.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed lg:text-base" style={{ color: "#262262" }}>
+                <p className="mt-3 text-base font-bold leading-relaxed text-[#262262] lg:text-base">
                   {p.desc}
                 </p>
                 <div className="mt-6 flex items-center gap-2 text-sm font-medium text-spark transition-all group-hover:gap-3">

@@ -153,9 +153,9 @@ export function WhyUs() {
                   <h3 className="mt-6 font-display text-2xl font-semibold leading-snug" style={{ color: "#d35c3c" }}>
                     {p.title}
                   </h3>
-                 <p className="mt-3 text-sm leading-relaxed text-foreground/90 lg:text-base">
-                    {p.desc}
-                  </p>
+               <p className="mt-3 text-base font-bold leading-relaxed text-[#262262] lg:text-base">
+  {p.desc}
+</p>
                 </div>
               </div>
             );

@@ -1,6 +1,5 @@
 import teamImg from "@/assets/about-residential.jpg";
 
-
 const pillars = [
   {
     label: "Our Mission",
@@ -29,7 +28,7 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
           {/* LEFT COLUMN */}
           <div>
-          <div className="mb-4 inline-flex items-center gap-2 text-2xl font-bold uppercase tracking-[0.25em] text-spark">
+            <div className="mb-4 inline-flex items-center gap-2 text-2xl font-bold uppercase tracking-[0.25em] text-spark">
               <span className="h-px w-8 bg-spark" /> About the Company
             </div>
             <h2 className="font-display text-4xl font-bold leading-tight text-foreground lg:text-5xl">
@@ -43,46 +42,47 @@ export function About() {
               infrastructure that powers tomorrow.
             </p>
 
-            <div className="mt-8 space-y-3">
-              {stats.map((s) => (
-                <div
-                  key={s.label}
-                  className="rounded-xl border border-border border-l-4 border-l-spark bg-navy-elevated p-5 transition-colors hover:bg-navy"
-                >
-                  <p className="text-sm font-bold leading-relaxed text-foreground/80">
-                    {s.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* CTA removed — links exist elsewhere on the page */}
-          </div>
-
-          {/* RIGHT COLUMN */}
-          <div className="space-y-4">
-            <div className="overflow-hidden rounded-2xl">
+            {/* Stats with background image */}
+            <div className="mt-8 relative overflow-hidden rounded-2xl">
               <img
                 src={teamImg}
-                alt="Modern residential apartment complex with pool and courtyard"
-                className="h-64 w-full object-cover lg:h-72"
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 h-full w-full object-cover"
               />
+              <div className="absolute inset-0 bg-[#262262]/50" />
+              <div className="relative z-10 space-y-3 p-4">
+                {stats.map((s) => (
+                  <div
+                    key={s.label}
+                    className="rounded-xl border border-white/20 border-l-4 border-l-[#d35c3c] bg-[#262262]/40 p-5 backdrop-blur-sm transition-colors hover:bg-[#262262]/60"
+                  >
+                    <p className="text-sm font-bold leading-relaxed text-white">
+  {s.label}
+</p>
+                  </div>
+                ))}
+              </div>
             </div>
+          </div>
 
+          {/* RIGHT COLUMN — white cards with brand blue text */}
+          <div className="space-y-4">
             {pillars.map((p) => (
               <div
                 key={p.label}
-                className="rounded-xl border border-border border-l-4 border-l-spark bg-navy-elevated p-5 transition-colors hover:bg-navy"
+                className="rounded-xl border-l-4 border-l-spark bg-white p-5 shadow-sm transition-colors hover:bg-gray-50"
               >
                 <div className="text-sm font-semibold uppercase tracking-[0.2em] text-spark">
                   {p.label}
                 </div>
-                <p className="mt-2 text-sm font-bold leading-relaxed text-foreground/80">
+                <p className="mt-2 text-sm font-bold leading-relaxed text-[#262262]">
                   {p.body}
                 </p>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
