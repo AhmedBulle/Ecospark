@@ -46,9 +46,10 @@ export function Footer() {
 
           {cols.map((c) => (
             <div key={c.title} className="lg:col-span-2">
-              <h4 className="font-display text-sm font-semibold uppercase tracking-widest">
-                {c.title}
-              </h4>
+              
+                  <h3 className="mt-6 font-display text-2xl font-semibold leading-snug" style={{ color: "#d35c3c" }}>
+                    {c.title}
+                  </h3>
               <ul className="mt-5 space-y-3">
                 {c.links.map((l) => (
                   <li key={l}>
@@ -65,9 +66,9 @@ export function Footer() {
           ))}
 
           <div className="lg:col-span-2">
-            <h4 className="font-display text-sm font-semibold uppercase tracking-widest">
-              Contact
-            </h4>
+          <h3 className="mt-6 font-display text-2xl font-semibold leading-snug" style={{ color: "#d35c3c" }}>
+                    Contact
+                  </h3>
             <ul className="mt-5 space-y-3 text-sm font-semibold">
               <li>+254 700 000 000</li>
               <li>info@ecospark.co</li>

@@ -41,7 +41,7 @@ export function Services() {
     <section id="services" className="relative bg-navy py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="max-w-2xl">
-          <div className="mb-4 inline-flex items-center gap-2 text-2xl font-bold uppercase tracking-[0.25em] text-spark">
+            <div className="mb-4 inline-flex items-center gap-2 text-2xl font-bold uppercase tracking-[0.25em] text-spark">
             <span className="h-px w-8 bg-spark" /> What We Do
           </div>
           <h2 className="font-display text-4xl font-bold leading-tight text-foreground lg:text-5xl">
